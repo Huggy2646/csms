@@ -1,0 +1,185 @@
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: This is a development server. Do not use it in a production deployment.
+   Use a production WSGI server instead.
+ * Debug mode: off
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+172.17.0.1 - - [02/Dec/2022 11:24:26] "[37mPOST /login HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:30] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:31] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:31] "[37mPOST /login HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:32] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:33] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:35] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:35] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:36] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:37] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:37] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:38] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:38] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:39] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:40] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:40] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:41] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:41] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:43] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:44] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:45] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:46] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:48] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:49] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:50] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:51] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:52] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:54] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:55] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:56] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:57] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:58] "[37mPOST /login HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:59] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:24:59] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+172.17.0.1 - - [02/Dec/2022 11:25:00] "[37mPOST /class_n HTTP/1.1[0m" 200 -
+[2022-12-02 11:25:00,810] ERROR in app: Exception on /class_n [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 67, in class_n
+    cursor.execute(query)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/cursors.py", line 148, in execute
+    result = self._query(query)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/cursors.py", line 310, in _query
+    conn.query(q)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 548, in query
+    self._affected_rows = self._read_query_result(unbuffered=unbuffered)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 775, in _read_query_result
+    result.read()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 1156, in read
+    first_packet = self.connection._read_packet()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 692, in _read_packet
+    packet_header = self._read_bytes(4)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 729, in _read_bytes
+    self._sock.settimeout(self._read_timeout)
+AttributeError: 'NoneType' object has no attribute 'settimeout'
+172.17.0.1 - - [02/Dec/2022 11:25:00] "[35m[1mPOST /class_n HTTP/1.1[0m" 500 -
+[2022-12-02 11:25:00,810] ERROR in app: Exception on /update [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 120, in update
+    db.commit()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 470, in commit
+    self._read_ok_packet()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 443, in _read_ok_packet
+    pkt = self._read_packet()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 707, in _read_packet
+    % (packet_number, self._next_seq_id)
+pymysql.err.InternalError: Packet sequence number wrong - got 1 expected 1
+172.17.0.1 - - [02/Dec/2022 11:25:00] "[35m[1mPOST /update HTTP/1.1[0m" 500 -
+[2022-12-02 11:25:01,666] ERROR in app: Exception on /class_n [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 57, in class_n
+    db.commit()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 469, in commit
+    self._execute_command(COMMAND.COM_QUERY, "COMMIT")
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 793, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+172.17.0.1 - - [02/Dec/2022 11:25:01] "[35m[1mPOST /class_n HTTP/1.1[0m" 500 -
+[2022-12-02 11:25:03,016] ERROR in app: Exception on /class_n [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 57, in class_n
+    db.commit()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 469, in commit
+    self._execute_command(COMMAND.COM_QUERY, "COMMIT")
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 793, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+172.17.0.1 - - [02/Dec/2022 11:25:03] "[35m[1mPOST /class_n HTTP/1.1[0m" 500 -
+[2022-12-02 11:25:04,707] ERROR in app: Exception on /class_n [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 57, in class_n
+    db.commit()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 469, in commit
+    self._execute_command(COMMAND.COM_QUERY, "COMMIT")
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 793, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+172.17.0.1 - - [02/Dec/2022 11:25:04] "[35m[1mPOST /class_n HTTP/1.1[0m" 500 -
+[2022-12-02 11:25:05,553] ERROR in app: Exception on /class_n [POST]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "app.py", line 57, in class_n
+    db.commit()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 469, in commit
+    self._execute_command(COMMAND.COM_QUERY, "COMMIT")
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 793, in _execute_command
+    raise err.InterfaceError(0, "")
+pymysql.err.InterfaceError: (0, '')
+172.17.0.1 - - [02/Dec/2022 11:25:05] "[35m[1mPOST /class_n HTTP/1.1[0m" 500 -
